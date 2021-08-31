@@ -1,5 +1,23 @@
-.rainbow_text { /* from https://rainbowcoding.com/posts/how-to-create-rainbow-text-in-html-css-javascript */
+.rainbow-text { /* from https://rainbowcoding.com/posts/how-to-create-rainbow-text-in-html-css-javascript */
     background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
     color:transparent;
     background-clip: text;
+}
+
+.nav-bar {
+    display: inline
+}
+
+.nav-element {
+    display: block;
+    padding: 8px;
+    background-color: #ffffff;
+}
+
+/* 
+    Removing padding before lists in paragraphs - found out how to do this from:
+    https://stackoverflow.com/questions/7759229/remove-space-between-paragraph-and-unordered-list 
+*/
+p + ul {
+    margin-top: -15px;
 }
