@@ -13,8 +13,22 @@ a:hover, a:active, a:focus {
     color:#c33;
 }
 
+table, th, td {
+    border: 1px solid #e2dddf;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #569cec
+}
+
 .page {
-    background-color: #5f565b;
+    background-color: #494748;
     padding: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -23,7 +37,7 @@ a:hover, a:active, a:focus {
 
 /* from https://rainbowcoding.com/posts/how-to-create-rainbow-text-in-html-css-javascript */
 .rainbow-text { 
-    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, rgb(243, 90, 90), rgb(243, 183, 72) , rgb(240, 240, 87), rgb(93, 240, 93), rgb(94, 243, 243), rgb(118, 118, 233), rgb(243, 182, 243));
     color:transparent;
     background-clip: text;
 }
@@ -54,5 +68,9 @@ a:hover, a:active, a:focus {
     https://stackoverflow.com/questions/7759229/remove-space-between-paragraph-and-unordered-list 
 */
 p + ul {
+    margin-top: -15px;
+}
+
+h3 + ul {
     margin-top: -15px;
 }
