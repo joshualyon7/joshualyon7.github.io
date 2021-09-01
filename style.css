@@ -1,3 +1,26 @@
+body {
+    background-color: #121212;
+    font-family: 'Futura PT';
+    color: #ffffff
+}
+a {
+    color: #569cec;
+}
+a:visited {
+    color: rgb(185, 78, 185);
+}
+a:hover, a:active, a:focus {
+    color:#c33;
+}
+
+.page {
+    background-color: #5f565b;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
 /* from https://rainbowcoding.com/posts/how-to-create-rainbow-text-in-html-css-javascript */
 .rainbow-text { 
     background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
