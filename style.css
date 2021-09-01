@@ -1,11 +1,12 @@
-.rainbow-text { /* from https://rainbowcoding.com/posts/how-to-create-rainbow-text-in-html-css-javascript */
+/* from https://rainbowcoding.com/posts/how-to-create-rainbow-text-in-html-css-javascript */
+.rainbow-text { 
     background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
     color:transparent;
     background-clip: text;
 }
 
 .nav-bar {
-    display: inline
+    display: inline;
 }
 
 .nav-element {
@@ -21,7 +22,7 @@
 }
 
 .pic-caption {
-    width: 275px;
+    width: auto;
     display: inline-block;
 }
 
