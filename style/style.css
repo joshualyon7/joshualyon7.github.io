@@ -63,6 +63,10 @@ tr:hover {
     display: inline-block;
 }
 
+.header-footer {
+    text-align: center;
+}
+
 /* 
     Removing padding before lists in paragraphs - found out how to do this from:
     https://stackoverflow.com/questions/7759229/remove-space-between-paragraph-and-unordered-list 
