@@ -106,6 +106,10 @@ tr:hover {
     height: 100px;
 }
 
+.val-text {
+    color: rgb(245, 69, 69);
+}
+
 /* 
     Removing padding before lists in paragraphs - found out how to do this from:
     https://stackoverflow.com/questions/7759229/remove-space-between-paragraph-and-unordered-list 

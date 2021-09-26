@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head lang="en-US">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact me!</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+
+        <!--EmailJs-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_5JB8xnfSpZ12PPXz9kZPb");
+            })();
+        </script> 
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById('contact_form').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_mkqnwkg', 'template_8fhxebe', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div class="page">
+            <div class="nav-placeholder"></div>
+            <h1>Send me an email!</h1>
+            <div>
+                <form id='contact_form'>
+                    <input type="hidden" name="contact_number">
+                    <label for="user_fname">First name:</label><br>
+                    <input placeholder="First" class="contact-box" id="First name" name="user_fname">
+                    <div id='first_v' class='val-text'></div><br>
+                    <label for="user_lname">Last name:</label><br>
+                    <input placeholder="Last" class="contact-box" id="Last name" name="user_lname"><br>
+                    <div id='last_v' class="val-text"></div><br>
+                    <label for="user_email">Email:</label><br>
+                    <input placeholder="Email" class="contact-box" id="Email" name="user_email"><br>
+                    <div id='email_v' class="val-text"></div><br>
+                    <label for="user_phone">Phone number:</label><br>
+                    <input placeholder="Phone" class="contact-box" id="Phone number" name="user_phone">
+                    <div id='phone_v' class="val-text"></div><br>
+                    <label for="user_message">Message:</label><br>
+                    <textarea class="message-box" id="Message" name="user_message"></textarea><br>
+                    <div id='msg_v' class="val-text"></div><br>
+                    <input type="submit" value="Send!" id='submit' disabled=true>
+                </form>
+            </div>
+        </div>
+        
+        <!--Custom js-->
+        <script src="src/index.js"></script>
+        <script src="src/contactForm.js"></script>
+    </body>
+</html>
