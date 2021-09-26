@@ -50,8 +50,8 @@ function validateEmail(inputField, err_field) {
         inputField.valid = false;
     }
     else inputField.valid = true;
-    
 
+    checkSubmitButton();
 }
 
 function validatePhone(inputField, err_field) {
@@ -66,7 +66,6 @@ function validatePhone(inputField, err_field) {
     }
 
     checkSubmitButton();
-
 }
 
 function checkSubmitButton() {
