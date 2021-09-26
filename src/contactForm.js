@@ -5,7 +5,7 @@ const phoneValidator = new RegExp('[0-9]{3}-[0-9]{3}-[0-9]{4}')
 
 async function getTldList() {
     const utf8Decoder = new TextDecoder('utf-8');
-    const url = "http://data.iana.org/TLD/tlds-alpha-by-domain.txt";
+    const url = "https://data.iana.org/TLD/tlds-alpha-by-domain.txt";
     const response = await fetch(url, {method: 'GET'})
     return await response.text();
 }
