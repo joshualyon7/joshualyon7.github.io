@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="style/style.css">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 
-        <!--EmailJs-->
+        <!--From EmailJs-->
         <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
         <script>
             (function() {
@@ -41,21 +41,27 @@
             <div>
                 <form id='contact_form'>
                     <input type="hidden" name="contact_number">
+
                     <label for="First_Name">First name:</label><br>
                     <input placeholder="First" class="contact-box" id="First_Name" name="user_fname">
                     <div id='first_v' class='val-text'></div><br>
+
                     <label for="Last_Name">Last name:</label><br>
                     <input placeholder="Last" class="contact-box" id="Last_Name" name="user_lname"><br>
                     <div id='last_v' class="val-text"></div><br>
+
                     <label for="Email">Email:</label><br>
                     <input placeholder="Email" class="contact-box" id="Email" name="user_email"><br>
                     <div id='email_v' class="val-text"></div><br>
+
                     <label for="Phone_Number">Phone number:</label><br>
                     <input placeholder="Phone" class="contact-box" id="Phone_Number" name="user_phone">
                     <div id='phone_v' class="val-text"></div><br>
+
                     <label for="Message">Message:</label><br>
                     <textarea class="message-box" id="Message" name="user_message"></textarea><br>
                     <div id='msg_v' class="val-text"></div><br>
+
                     <input type="submit" value="Send!" id='submit' disabled>
                     <div id='success-field' class='success-text'></div>
                 </form>
