@@ -42,12 +42,8 @@ function validateEmail(inputField, err_field) {
     if (!((emailValidator).test(inputField.html.value)) || !(domainList.includes(domain.toUpperCase()))) {
         err_html.innerHTML = `\n<strong>${inputField.html.value}</strong> is not a valid email`; 
         inputField.valid = false;
-        console.log("invalid email");
     }
-    else {
-        console.log("valid email");
-        inputField.valid = true;
-    }
+    else inputField.valid = true;
     
 
 }
@@ -68,19 +64,7 @@ function validatePhone(inputField, err_field) {
 }
 
 function checkSubmitButton() {
-    if (Object.values(formEntries).every(entry => {
-        if(entry.valid) {
-            console.log("good " + entry.html.id);
-        } else {
-            console.log("bad " + entry.html.id);
-        }
-        return entry.valid;
-    })) {
-        submitButton.disabled = false;
-    } 
-    else {
-        submitButton.disabled = true;
-    }
+    submitButton.disabled = !Object.values(formEntries).every(entry => entry.valid)
 }
 
 const formEntries = {
