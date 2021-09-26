@@ -10,13 +10,13 @@
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 
         <!--EmailJs-->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
             (function() {
                 emailjs.init("user_5JB8xnfSpZ12PPXz9kZPb");
             })();
         </script> 
-        <script type="text/javascript">
+        <script>
             window.onload = function() {
                 document.getElementById('contact_form').addEventListener('submit', function(event) {
                     event.preventDefault();
@@ -41,19 +41,19 @@
             <div>
                 <form id='contact_form'>
                     <input type="hidden" name="contact_number">
-                    <label for="user_fname">First name:</label><br>
-                    <input placeholder="First" class="contact-box" id="First name" name="user_fname">
+                    <label for="First_Name">First name:</label><br>
+                    <input placeholder="First" class="contact-box" id="First_Name" name="user_fname">
                     <div id='first_v' class='val-text'></div><br>
-                    <label for="user_lname">Last name:</label><br>
-                    <input placeholder="Last" class="contact-box" id="Last name" name="user_lname"><br>
+                    <label for="Last_Name">Last name:</label><br>
+                    <input placeholder="Last" class="contact-box" id="Last_Name" name="user_lname"><br>
                     <div id='last_v' class="val-text"></div><br>
-                    <label for="user_email">Email:</label><br>
+                    <label for="Email">Email:</label><br>
                     <input placeholder="Email" class="contact-box" id="Email" name="user_email"><br>
                     <div id='email_v' class="val-text"></div><br>
-                    <label for="user_phone">Phone number:</label><br>
-                    <input placeholder="Phone" class="contact-box" id="Phone number" name="user_phone">
+                    <label for="Phone_Number">Phone number:</label><br>
+                    <input placeholder="Phone" class="contact-box" id="Phone_Number" name="user_phone">
                     <div id='phone_v' class="val-text"></div><br>
-                    <label for="user_message">Message:</label><br>
+                    <label for="Message">Message:</label><br>
                     <textarea class="message-box" id="Message" name="user_message"></textarea><br>
                     <div id='msg_v' class="val-text"></div><br>
                     <input type="submit" value="Send!" id='submit' disabled=true>

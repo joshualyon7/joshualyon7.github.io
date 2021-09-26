@@ -25,7 +25,7 @@ function assertNonNull(inputField, err_field) {
 
     if (!inputField.html.value.length > 0) {
         if (err_html.innerHTML.length === 0){
-            err_html.innerHTML = `\n<strong>${inputField.html.id}</strong> must not be empty`; 
+            err_html.innerHTML = `\n<strong>${inputField.html.id.replace('_', ' ')}</strong> must not be empty`; 
         }
         inputField.valid = false;
     }
@@ -59,7 +59,7 @@ function validatePhone(inputField, err_field) {
     const err_html = document.getElementById(err_field);
 
     if(!inputField.html.value.match(phoneValidator)) {
-        err_html.innerHTML = `\n<strong>${inputField.html.id}</strong> must only contain numbers and be in the form of 123-456-7890`;
+        err_html.innerHTML = `\n<strong>${inputField.html.id.replace('_', ' ')}</strong> must only contain numbers and be in the form of 123-456-7890`;
         inputField.valid = false;
     } else {
         err_html.innerHTML = '';
@@ -75,11 +75,11 @@ function checkSubmitButton() {
 
 const formEntries = {
     fname: {
-        html: document.getElementById('First name'),
+        html: document.getElementById('First_Name'),
         valid: false,
     },
     lname: {
-        html: document.getElementById('Last name'),
+        html: document.getElementById('Last_Name'),
         valid: false,
     },
     email: {
@@ -87,7 +87,7 @@ const formEntries = {
         valid: false
     },
     phone: {
-        html: document.getElementById('Phone number'),
+        html: document.getElementById('Phone_Number'),
         valid: false
     },
     message: {
