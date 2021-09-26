@@ -25,9 +25,10 @@
                     // these IDs from the previous steps
                     emailjs.sendForm('service_mkqnwkg', 'template_8fhxebe', this)
                         .then(function() {
-                            console.log('SUCCESS!');
+                            document.getElementById('success-field').innerHTML = 'Email sent successfully!';
                         }, function(error) {
-                            console.log('FAILED...', error);
+                            document.getElementById('success-field').style.color = 'red';
+                            document.getElementById('success-field').innerHTML = 'Email unable to be sent';
                         });
                 });
             }
@@ -56,6 +57,7 @@
                     <textarea class="message-box" id="Message" name="user_message"></textarea><br>
                     <div id='msg_v' class="val-text"></div><br>
                     <input type="submit" value="Send!" id='submit' disabled=true>
+                    <div id='success-field' class='success-text'></div>
                 </form>
             </div>
         </div>
