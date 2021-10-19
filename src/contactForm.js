@@ -5,7 +5,7 @@ const domainList = [];
 const emailValidator = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*/;
 
 // Custom regex
-const phoneValidator = new RegExp('[0-9]{3}-[0-9]{3}-[0-9]{4}')
+const phoneValidator = new RegExp('[0-9]{3}-[0-9]{3}-[0-9]{4}$')
 
 async function getTldList() {
     const utf8Decoder = new TextDecoder('utf-8');
