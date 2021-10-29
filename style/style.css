@@ -55,6 +55,28 @@ tr:hover {
     justify-content: left;
 }
 
+.footer-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    height: 100%;
+}
+
+.footer-btn {
+    height: 100%;
+    padding-left: -40;
+}
+
+.footer-div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--block-color);
+    height: 50px;
+}
+
 .pic-with-caption {
     vertical-align: top;
     display: inline-block;
@@ -66,7 +88,7 @@ tr:hover {
     display: inline-block;
 }
 
-.header-footer {
+.header-div {
     text-align: left;
     justify-content: left;
     background-color: var(--block-color);
@@ -81,6 +103,39 @@ tr:hover {
     color: white;
     background-color: var(--block-color);
     border: transparent;
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    background-color: var(--block-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+    80% {
+      transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block; 
+}
+
+.drop-btn {
+    width: 100%;
+    align-self: left;
 }
 
 .nav-btn:hover {
@@ -113,6 +168,12 @@ tr:hover {
 .success-text {
     color: greenyellow;
     font-weight: bold
+}
+
+.resume-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* 
