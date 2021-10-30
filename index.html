@@ -10,9 +10,11 @@
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
         <!-- jQuery stuff -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <!-- FontAwesome stuff -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://kit.fontawesome.com/2e69eae905.js" crossorigin="anonymous"></script>
+        
         <!-- Google analytics stuff -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELQ599SV8P"></script>
         <script>
@@ -22,6 +24,7 @@
 
             gtag('config', 'G-ELQ599SV8P');
         </script>
+        
     </head>
 
     <body>
@@ -32,48 +35,117 @@
                 <!--
                     Name: Joshua Lyon
                     Course: CISC474
-                    Assignment: Personal Web Page 1
+                    Assignment: Personal Web Page 3
                     Email: joshlyon@udel.edu
                 -->
                 Hi, I'm Josh Lyon.
             </h1>
-            <p>
-                This is a website for CISC474 at the University of Delaware. <strong>The course website 
-                can be found <a href="https://mattm401.github.io/">here</a>.</strong><br>
-            </p>
+            <div class="row dark">
 
-            <div style="vertical-align: top;display: inline-block;">
-                <img style="margin-right: 10px;" src="assets/josh.jpg" height="300" alt="A picture of josh">
+                <!--Info Table-->
+                <div class="column">
+                    <div>
+                        <h2>Some logistical information about me:</h2>
+                        <table>
+                            <tr>
+                                <th>Full name</th>
+                                <th style="font-weight:normal;">Joshua Michael Lyon</th>
+                            </tr>
+                            <tr>
+                                <th>School</th>
+                                <th style="font-weight:normal;">University of Delaware</th>
+                            </tr>
+                            <tr>
+                                <th>Major</th>
+                                <th style="font-weight:normal;">Computer Science</th>
+                            </tr>
+                            <tr>
+                                <th>Concentration</th>
+                                <th style="font-weight:normal;">Cybersecurity</th>
+                            </tr>
+                            <tr>
+                                <th>Expected Graduation</th>
+                                <th style="font-weight:normal;">May 2022</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="column">
+                    <div>
+                        <h2>Me with a bird</h2>
+                        <img style="margin-right: 10px;" src="assets/josh.jpg" height="300" alt="A picture of josh">
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div>
+                        <h2>General Interests</h2>
+                        <h3>Web development</h3>
+                        <ul>
+                            <li>Learning modern technologies</li>
+                            <li>Figuring out how to design a nice UI/UX</li>
+                            <li>Learning how to better work in a team</li>
+                        </ul>
+
+                        <h3>Personal</h3>
+                        <ul>
+                            <li>Running, hiking, biking</li>
+                            <li>Mario Kart (Birdo main)</li>
+                            <li>Playing music (drums, piano, guitar)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <!--Info Table-->
-            <div style="display: inline-block;">
-                <h2>Some other information about me:</h2>
-                <table>
-                    <tr>
-                        <th>Full name</th>
-                        <th style="font-weight:normal;">Joshua Lyon</th>
-                    </tr>
-                    <tr>
-                        <th>School</th>
-                        <th style="font-weight:normal;">University of Delaware</th>
-                    </tr>
-                    <tr>
-                        <th>Major</th>
-                        <th style="font-weight:normal;">Computer Science</th>
-                    </tr>
-                    <tr>
-                        <th>Concentration</th>
-                        <th style="font-weight:normal;">Cybersecurity</th>
-                    </tr>
-                    <tr>
-                        <th>Expected Graduation</th>
-                        <th style="font-weight:normal;">May 2022</th>
-                    </tr>
-                </table>
+            <div class="divider"></div>
+
+            <div class="row">
+                <div>
+                    <h2>Career Aspirations</h2>
+                    <p>
+                        I've explored a lot of different career paths during my time at UD. Of them, some of the 
+                        ones I most see myself doing are...
+                    </p>
+                    <table>
+                        <tr>
+                            <td>Software Engineering</td>
+                            <td>
+                                My experience with general software engineering projects is varied. I've done everything from creating a 
+                                <a href="https://github.com/ud-cis-discord/SageV2">Discord bot</a> for my school to government contracting work
+                                during an internship with Northrop Grumman. You can learn about those and more <a href="projects.html">over here,</a>
+                                but the main takeaway is that I have a passion for creating software, no matter the context or language.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Teaching</td>
+                            <td>
+                                Teaching is one of the most satisfying things I've had the pleasure of doing while in school. I've TA'd for multiple 
+                                courses and taught band at many high schools. I had many great teachers throughout my education and would love to get
+                                the opportunity to give some of that back. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Research</td>
+                            <td>
+                                Research is something I'm not as familiar with, only having done a semester of it in High Performance Computing at UD. 
+                                Pushing the boundaries of what has been done is a very attractive concept, and I would be grateful to work on the 
+                                cutting edge of technology. 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dev Ops</td>
+                            <td>
+                                I adore workflows. The first thing I do when I start up a new project is think about how I'll organize my workflow. Going 
+                                into Dev-Ops would be a dream come true! When working on UD's Discord bot, Sage, I set up a Jenkins pipeline to deploy it, 
+                                and getting that working was the most satisfying thing in the world. 
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
+
             <div class="footer-placeholder"></div>
-
         </div>
 
         <!--Custom js-->

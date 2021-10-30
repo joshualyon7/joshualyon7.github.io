@@ -21,7 +21,7 @@ a:hover, a:active, a:focus {
 }
 
 table, th, td {
-    border: 1px solid #e2dddf;
+    border: 1px solid grey;
     border-collapse: collapse;
 }
 
@@ -30,8 +30,12 @@ th, td {
     text-align: left;
 }
 
+tr:nth-child(odd) {
+    background-color: var(--block-color);
+}
+
 tr:hover {
-    background-color: #569cec;
+    background-color: #669900;
 }
 
 .page {
@@ -64,9 +68,12 @@ tr:hover {
     height: 100%;
 }
 
+.footer-placeholder {
+    margin-top: 15px;
+}
+
 .footer-btn {
-    height: 100%;
-    padding-left: -40;
+    padding: 10px;
 }
 
 .footer-div {
@@ -75,6 +82,7 @@ tr:hover {
     justify-content: center;
     background-color: var(--block-color);
     height: 50px;
+    border-radius: 5px;
 }
 
 .pic-with-caption {
@@ -93,6 +101,7 @@ tr:hover {
     justify-content: left;
     background-color: var(--block-color);
     height: 50px;
+    border-radius: 5px;
 }
 
 .nav-btn {
@@ -109,7 +118,7 @@ tr:hover {
     display: none;
     position: absolute;
     background-color: var(--block-color);
-    min-width: 160px;
+    min-width: 170px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     animation: growDown 300ms ease-in-out forwards;
@@ -143,37 +152,29 @@ tr:hover {
     cursor: pointer;
 }
 
-.form-body {
-    border-radius: 10px;
-    background-color: var(--block-color);
-    margin: 20px;
-    padding: 10px;
-    align-content: center;
-}
-
-.contact-box, .message-box {
-    border-radius: 5px;
-    margin: 5px;
-}
-
-.message-box {
-    width: 500px;
-    height: 100px;
-}
-
-.val-text {
-    color: rgb(245, 69, 69);
-}
-
-.success-text {
-    color: greenyellow;
-    font-weight: bold
-}
-
 .resume-box {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex: 50%;
+}
+
+.divider {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.row {
+    display: flex;
 }
 
 /* 

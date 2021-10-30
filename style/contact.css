@@ -1,0 +1,27 @@
+
+.form-body {
+    border-radius: 10px;
+    background-color: var(--block-color);
+    margin: 20px;
+    padding: 10px;
+    align-content: center;
+}
+
+.contact-box, .message-box {
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.message-box {
+    width: 500px;
+    height: 100px;
+}
+
+.val-text {
+    color: rgb(245, 69, 69);
+}
+
+.success-text {
+    color: greenyellow;
+    font-weight: bold
+}

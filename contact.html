@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Contact me!</title>
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/contact.css">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
 
         <!-- jQuery stuff -->
@@ -43,12 +44,16 @@
 
             gtag('config', 'G-ELQ599SV8P');
         </script>
+        <!-- FontAwesome stuff -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/2e69eae905.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="page">
             <div class="nav-placeholder"></div>
             <h1>Send me an email!</h1>
-            <div>
+            <p>Fill out this form to contact me, or just <span style="font-weight: bold;"><a href="mailto:joshlyon@udel.edu">send me an email!</a></span></p>
+            <div style="margin: 10px">
                 <form id='contact_form'>
                     <input type="hidden" name="contact_number">
 
@@ -76,6 +81,7 @@
                     <div id='success-field' class='success-text'></div>
                 </form>
             </div>
+            <div class="footer-placeholder"></div>
         </div>
         
         <!--Custom js-->
