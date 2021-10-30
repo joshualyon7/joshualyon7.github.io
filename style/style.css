@@ -181,6 +181,10 @@ tr:hover {
     margin-bottom: 10px;
 }
 
+.resume-iframe {
+    width: 80%;
+}
+
 .column {
     display: flex;
     justify-content: center;
