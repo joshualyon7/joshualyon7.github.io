@@ -2,81 +2,99 @@
 
 <html lang="en-US">
 
-    <head lang="en-US">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>About Me</title>
-        <link rel="stylesheet" href="style/style.css">
-        <!-- jQuery stuff -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELQ599SV8P"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+<head lang="en-US">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- jQuery stuff -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ELQ599SV8P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-            gtag('config', 'G-ELQ599SV8P');
-        </script>
-        <!-- FontAwesome stuff -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://kit.fontawesome.com/2e69eae905.js" crossorigin="anonymous"></script>
-    </head>
+        gtag('config', 'G-ELQ599SV8P');
+    </script>
+    <!-- FontAwesome stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2e69eae905.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-        <div class="page">
-            <div class="nav-placeholder"></div>
+<body>
+    <div class="page">
+        <div class="nav-placeholder"></div>
 
-            <h1>About Me</h1>
+        <h1>Projects</h1>
+        <p>I've done a number of projects throughout my software engineering career. Click below to find out more!</p>
 
-            <div>
+        <div>
 
-                <h4>
-                    <strong><span class="rainbow-text">Here is an easily noticeable interesting fact: </span></strong> I played drums in Joe Biden's Inaugural Parade<br>
-                </h4>
-
-                <h2>Work Experience</h2>
-
-                <div class="pic-with-caption">
-                    <img src="assets/discord_logo.webp" alt="Discord Logo" height=150>
+            <div class="collapsible">
+                <h2 class="collapse-button">▼ University Discord Bot</h2>
+                <div style="display: none;" class="collapsible-content row">
+                    <div class="pic-with-caption">
+                        <img class="captioned-pic" src="assets/discord_logo.webp" alt="Discord Logo">
+                    </div>
+                    <div class="pic-caption">
+                        <p>
+                            I wrote a bot named Sage in Typescript for the UD CIS Department's official Discord Server. 
+                            Sage moderates the server and has a variety of fun commands for students to use that help them 
+                            engage socially in the various channels on the server.
+                        </p>
+                    </div>
                 </div>
-                <div class="pic-caption">
-                    <p>I wrote a bot in Typescript for the UD CIS Department's official Discord Server</p>
-                </div>
-
-                <br>
-                <div class="pic-with-caption">
-                    <img src="assets/ud_logo.png" alt="University of Delaware Logo" height=150>
-                </div>
-                <div class="pic-caption">
-                    I've been a TA for the UD CIS Department for about 3 years. <br> 
-                    The courses I've TA'd for include: 
-                    <ul>
-                        <li>CISC 108</li>
-                        <li>CISC 210</li>
-                        <li>CISC 181</li>
-                        <li>CISC 275</li>
-                    </ul>
-                </div>
-
-                <br>
-                <div class="pic-with-caption">
-                    <img src="assets/ngc.jpg" alt="Northrop Grumman Logo" height=150>
-                </div>
-                <div class="pic-caption">
-                    <p>
-                        I interned at Northrop Grumman in summer of 2020 & 2021 doing Embedded Software Engineering.
-                    </p>
-                </div>
-                    
             </div>
-        <div class="footer-placeholder"></div>
-        </div>
 
-        <!--Custom js-->
-        <script src="src/index.js"></script>
-    </body>
+            <div class="collapsible">
+                <h2 class="collapse-button">▼ Various Raspberry Pi Projects</h2>
+                <div style="display: none" class="collapsible-content row">
+                    <div class="pic-with-caption">
+                        <img class="captioned-pic" src="assets/rpi.jpg" alt="A Raspberry Pi">
+                    </div>
+                    <div class="pic-caption">
+                        <p>I've done many projects with Raspberry Pi's including:</p>
+                        <ul>
+                            <li>A network-wide ad blocker with <a href="https://pi-hole.net/">Pi-hole</a></li>
+                            <li>A retro game emulation station with <a href="https://retropie.org.uk/">RetroPie</a></li>
+                        </ul>
+                        <p>
+                            These have taught me a ton about Unix systems and software engineering in general! They have
+                            also helped me procrastinate a lot (looking at you, Pokemon Emerald)
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible">
+                <h2 class="collapse-button">▼ Northrop Grumman Projects</h2>
+                <div style="display:none" class="collapsible-content row">
+                    <div class="pic-with-caption">
+                        <img class="captioned-pic" src="assets/ngc.jpg" alt="Northrop Grumman Logo">
+                    </div>
+                    <div class="pic-caption">
+                        <p>
+                            Over my two internships with Northrop Grumman, I've participated in a number of projects involving 
+                            Embedded Software Engineering. Due to the proprietary and classified nature of the work, I can't go 
+                            into detail about them, but I hope to do more when I start working there after graduation!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer-placeholder"></div>
+    </div>
+
+    <!--Custom js-->
+    <script src="src/index.js"></script>
+</body>
 
 
 </html>

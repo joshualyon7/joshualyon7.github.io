@@ -62,4 +62,12 @@ $(() => {
         $("#course-drop").hide();
     });
 
+    $(".collapsible").click((e) => {
+       $(e.target).next().slideToggle(); 
+       $(e.target).text($(e.target).text()[0] === '▼' ? `▲${$(e.target).text().slice(1)}` : `▼${$(e.target).text().slice(1)}`);
+       console.log("clicked");
+       console.log($(e.target));
+
+    });
+    
 });
